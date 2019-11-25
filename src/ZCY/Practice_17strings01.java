@@ -21,9 +21,10 @@ public class Practice_17strings01 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String str = sc.nextLine();
-
+		//max记录最大长度，count记录当前01串长度
 		int max = 1;
 		int count = 1;
+		//比较 i 位置和 i-1位置，相同 len=0，不同len++
 		for (int i = 1; i < str.length(); i++) {
 			count++;
 			if (str.charAt(i) == str.charAt(i - 1)) {
